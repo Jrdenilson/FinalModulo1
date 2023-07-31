@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+           <div>
+            <a href="editar.html" class="navbar-brand" href="#"
+              ><img
+                id="logo"
+                src="http://lorempixel.com.br/300/200"
+                alt="Logo"
+                width="200"
+                height="100"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+           </div>
+            
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="form-inline my-2 my-lg-0" id="pesquisa">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Pesquisar"
+                  aria-label="Search"
+                  autocomplete="off"
+                />
+                <button class="btn btn-warning my-2 my-sm-0" type="submit">
+                  Pesquisar
+                </button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <main>
+
+        <section id="menu" class="container text-center">
+          <ul class="row row-cols-4">
+            <a href="#" class="col-3"><li>Home</li></a>
+            <a href="#" class="col-3"><li>Contato</li></a>
+            <a href="#" class="col-3"><li>Sobre</li></a>
+            <a href="#" class="col-3"><li>Saiba Mais</li></a>
+          </ul>
+        </section>
+        <section id="cabecalho">
+            <h2>Cadastro de Clientes</h2>
+            <a href="editar.html">
+              <button class="btn btn-primary d-inline-flex align-items-center" type="button" id="adicionar">
+                Adicionar <span id="botao"><i class="bi bi-plus-square-dotted"></i></span>
+                
+              </button>
+            </a>
+              
+        </section>
+        <section id="tabela">
+            <table>
+                <tr>
+                  <th>Id</th>
+                  <th >Nome</th>
+                  <th >Data Nascimento</th>
+                  <th class="email">Email</th>
+                  <th >Ações</th>
+                </tr>
+                <tr>
+                  <th >1</th>
+                  <th >Denilson</th>
+                  <th >18/06/1984</th>
+                  <th class="email">denilson@email.com</th>
+                  <th id="acoes">
+                    <a href="editar.html" class="botao_tabela"><i class="bi bi-pencil"></i> <span>adicionar</span></a>
+                    <a class="botao_tabela" id="liveAlertBtn"><i class="bi bi-trash3"></i> <span>excluir</span></a>
+                    <div id="liveAlertPlaceholder"></div>
+                  </th>
+                </tr>
+                <tr>
+                  <th >2</th>
+                  <th >Mariane</th>
+                  <th >18/06/1984</th>
+                  <th class="email">mariane@email.com</th>
+                  <th id="acoes">
+                    <a href="editar.html" class="botao_tabela"><i class="bi bi-pencil"></i> <span>adicionar</span></a>
+                    <a  class="botao_tabela"><i class="bi bi-trash3"></i> <span>excluir</span></a>
+                  </th>
+                  
+                </tr>
+                <tr>
+                  <th >3</th>
+                  <th >Jõao</th>
+                  <th >18/06/1984</th>
+                  <th class="email">joao@email.com</th>
+                  <th id="acoes">
+                    <a href="editar.html" class="botao_tabela"><i class="bi bi-pencil"></i> <span>adicionar</span></a>
+                    <a  class="botao_tabela"><i class="bi bi-trash3"></i> <span>excluir</span></a>
+                  </th>
+                </tr>
+                <tr>
+                  <th >4</th>
+                  <th >Jane</th>
+                  <th >18/06/1984</th>
+                  <th class="email">jane@email.com</th>
+                  <th id="acoes">
+                    <a href="editar.html" class="botao_tabela"><i class="bi bi-pencil"></i> <span>adicionar</span></a>
+                    <a  class="botao_tabela"><i class="bi bi-trash3"></i> <span>excluir</span></a>
+                  </th>
+                </tr>
+               
+              </table>
+        </section>
+    </main>
+    
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Santander Coders, Inc</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitch"></i></a></li>
+            </ul>
+          
+    </footer>
+</body>
+<link rel="stylesheet" href="/styles/styles.css">
+
+<script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    const appendAlert = (message, type) => {
+     const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `<div class="um"><h6>Excluir Cliente</h6></div>`,
+    `   <div class="dois"><b>${message}</b></div>`,
+    '   <div class="tres"><button data-bs-dismiss="alert">Sim</button> <button data-bs-dismiss="alert">Não</button></div>',
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Deseja realmente apagar o Cliente ?', 'success')
+  })
+}
+</script>
+</html>

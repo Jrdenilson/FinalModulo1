@@ -1,0 +1,172 @@
+* {
+    font-family:'Courier New', Courier, monospace ;
+    font-weight: bolder;
+    margin: 0;
+  }  
+  table {
+    border: 1px solid black;
+  }
+
+  th {
+    
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+    width: 15em;
+  }
+
+  nav div {
+    padding: 0.5%;
+  }
+
+  nav {
+    
+    background-color: #508CA4;
+  }
+
+  .botao_tabela {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #acoes {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 0.2em;
+    
+  }
+
+  #acoes a {
+    display: flex;
+    border: none;
+    align-items: center;
+    background-color: #BFD7EA;
+    font-size: smaller;
+    width: 10em;
+  }
+
+  
+
+  #adicionar, h2 {
+    display: flex;
+    gap: 1em;
+    
+  }
+
+  
+
+.collapse {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #pesquisa {
+    display: flex;
+    gap: 0.3em;
+  }
+
+  #cabecalho {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    gap: 3em;
+    
+  }
+
+  #tabela {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .alert {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 2px;
+  }
+
+  .tres {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .um, .dois, .tres {
+    border: 1px solid black;
+    padding: 1em;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+
+ 
+
+  #form section {
+    margin: 0.8%;
+    padding: 1%;
+  }
+
+  #sexo1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    background-color: #BFD7EA;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  
+
+  footer {
+    background-color: #508CA4;
+    padding-right: 2%;
+  }
+
+  #menu {
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+    
+  }
+
+  #menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1%;    
+    width: 100%;
+    
+  }
+
+  #menu ul a li {
+    list-style: none;
+    border: 1px solid black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu ul a{
+    text-decoration: none;
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    .email {
+      display: none;
+    }
+    
+  }
